@@ -1,0 +1,33 @@
+{
+  "name": "kirtis-react",
+  "version": "1.0.0",
+  "description": "This is react by kirti",
+  "homepage": "https://github.com/kruthigha/react#readme",
+  "bugs": {
+    "url": "https://github.com/kruthigha/react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kruthigha/react.git"
+  },
+  "license": "ISC",
+  "author": "kirti",
+  "type": "commonjs",
+  "scripts": {
+    "start":"parcel index.html",
+    "build" : "parcel build index.html", 
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "browsersList": [
+    "last 2 chrome versions",
+    "last 2 Firefox versions",
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
