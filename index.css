@@ -1,4 +1,6 @@
-#header-container {
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+/* #header-container {
     display: flex;
     justify-content: space-between;
     border: 1px solid orange;
@@ -52,3 +54,39 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.shimmer-card {
+    height: 300px;
+    width : 200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px;
+
+}
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;;
+}
+
+.shimmer-search-input{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+
+}
+#shimmer-search-btn{
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+#loginBtn{
+    cursor: pointer;
+    background-color:orangered ;
+    border: 1px solid orangered;
+    color: white;
+}
+
+.user-card {
+    border: 1px solid orange;
+    padding: 20px;
+} */
