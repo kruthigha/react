@@ -14,12 +14,16 @@
   "author": "kirti",
   "type": "commonjs",
   "scripts": {
-    "start":"parcel index.html",
-    "build" : "parcel build index.html", 
-    "test": "jest"
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest",
+    "start:server": "node server.js",
+    "scrape": "node tools/scrape-swiggy.js"
   },
   "devDependencies": {
-    "parcel": "^2.16.4"
+    "@tailwindcss/postcss": "^4.1.18",
+    "parcel": "^2.16.4",
+    "tailwindcss": "^4.1.18"
   },
   "browsersList": [
     "last 2 chrome versions",
@@ -27,7 +31,12 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "puppeteer": "^24.37.3",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^6.30.3"
   }
 }

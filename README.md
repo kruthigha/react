@@ -29,3 +29,8 @@
   import {component} from './src/component'
 
 
+  Two types of web routing
+  client side routing - doesnt make a ntk call while navigating to our page, everytg is already loaded into our app
+  server side routing - makes a ntk call while navigating to our page,and that about.html is coming from server thats Server side routing
+
+
