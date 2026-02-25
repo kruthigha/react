@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect ,useContext} from "react";
 import { resList } from "../utils/mockdata";
 import RestaurantCard ,{withPromotedLabel} from "./RestaurantCard";
 import ShimmerUI from "./ShimmerUI";
 import { Link } from "react-router-dom";
 import useFetch from "../utils/useFetch";
+import UserContext from "../utils/UserContext";
 /**
  * Restaurant container
  * search
@@ -12,6 +13,7 @@ import useFetch from "../utils/useFetch";
  */
 export const Body = () => {
   const [searchText,setSearchText] = useState('');
+  const { name, setUserName } = useContext(UserContext)
   // const [res,setRes] = arr
   // const res= arr[0]
   // const setRes = arr[1]
@@ -78,6 +80,7 @@ export const Body = () => {
         <input  className="border border-black"placeholder="Search restaurants..." type="text" onChange={captureTyping}  value={searchText} />
         <button className="ml-4 rounded-md px-2 bg-orange-400" id="seachBtn" onClick={searchRestaurants}> Search Restaurant</button>
         <button  className="ml-4 rounded-md px-2 bg-orange-400" id="seachBtn" onClick={filterRestaurants}> Top Restaurants </button>
+        <input  className="border border-black ml-4"placeholder="Type user name here...." type="text"  onChange = {(e)=> setUserName(e.target.value)} value = {name} />
       </div>
       <div className="flex flex-wrap px-10 " id="restaurantContainer">
         {resCopy.map((item) => 

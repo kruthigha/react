@@ -1,11 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
+
 const Header = () => {
   const [loginBtn, setLoginBtn] = useState(true);
   const [count, setCount] = useState(0);
-  console.log('Header Rendered');
+  const store = useSelector((store)=>store.cart)
+  const user = useContext(UserContext)
+
+  console.log('Store',store.items);
 
   useEffect(()=>{
     console.log('useEff called');
@@ -29,7 +35,7 @@ const Header = () => {
              <Link to = '/contact'>Contact</Link>
           </li>
           <li id="nav-item" className="p-4 m-2 text-amber-50 text-lg">
-            <Link to = '/cart'>Cart</Link>
+            <Link to = '/cart'>Cart({store.items.length} items)</Link>
           </li>
           <li id="nav-item" className="p-4 m-2 text-amber-50 text-lg">
             <Link to='/grocery'>Grocery</Link>
@@ -42,6 +48,10 @@ const Header = () => {
               {loginBtn ? "Login" : "Logout"}
             </button>
           </li>
+          <li id="nav-item" className="p-4 m-2 text-amber-50 text-lg">
+            {user.name}
+          </li>
+
         </ul>
       </div>
     </div>

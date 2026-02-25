@@ -1,5 +1,8 @@
 import { CDN_URL } from "../utils/constants";
+import { useContext } from "react";
+import UserContext from "../utils/UserContext";
 const RestaurantCard = ({ resData }) => {
+  const { name: name1 } = useContext(UserContext);
   const { name,cuisines,avgRating,costForTwo, cloudinaryImageId } = resData?.info
   // const styleCard = {
   //   backgroundColor: "#f0f0f0",
@@ -20,6 +23,7 @@ const RestaurantCard = ({ resData }) => {
       <p className="text-sm font-sans">{cuisines.join(", ")}</p>
       <p className="text-sm font-bold">{avgRating} Ratings</p>
       <p className="text-md font-serif">₹{costForTwo / 100} for two</p>
+       <p className="text-md font-serif">{name1}</p>
       </div>
     </div>
   );
