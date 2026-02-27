@@ -76,13 +76,13 @@ export const Body = () => {
   return res.length === 0 ? <ShimmerUI /> : (
     <div id="body-container" >
       {/* {console.log('Body Rendered 2')} */}
-      <div id="searchContainer" className="px-10 py-4">
-        <input  className="border border-black"placeholder="Search restaurants..." type="text" onChange={captureTyping}  value={searchText} />
-        <button className="ml-4 rounded-md px-2 bg-orange-400" id="seachBtn" onClick={searchRestaurants}> Search Restaurant</button>
+      <div id="searchContainer" className="px-30 py-4">
+        <input  className="border border-black"placeholder="Search restaurants..." type="text" onChange={captureTyping}  value={searchText} data-testid='searchInput'/>
+        <button className="ml-4 rounded-md px-2 bg-orange-400" id="seachBtn" onClick={searchRestaurants} > Search Restaurant</button>
         <button  className="ml-4 rounded-md px-2 bg-orange-400" id="seachBtn" onClick={filterRestaurants}> Top Restaurants </button>
-        <input  className="border border-black ml-4"placeholder="Type user name here...." type="text"  onChange = {(e)=> setUserName(e.target.value)} value = {name} />
+        <input  className="border border-black ml-4"placeholder="Type user name here...." type="text"  onChange = {(e)=> setUserName(e.target.value)} value = {name}  data-testid='searchInput1' />
       </div>
-      <div className="flex flex-wrap px-10 " id="restaurantContainer">
+      <div className="flex flex-wrap px-40 " id="restaurantContainer">
         {resCopy.map((item) => 
         <Link key={item.info.id} to={`/restaurant/${item.info.id}`}>
           {item.info.promoted ? <RestaurantCardPromoted resData={item} /> : <RestaurantCard resData={item}  />}

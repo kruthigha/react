@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from "react";
-import { MeghanaFoods } from "../utils/mockdata";
 import { useParams } from "react-router-dom";
 import MeghanaFoods from "../utils/mockData.json";
 import RestaurantMenuAccordian from "./RestaurantMenuAccordian";
@@ -9,18 +8,18 @@ const RestaurantMenu =() => {
   const { resId } = useParams();
   const Cards = MeghanaFoods.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards;
   const dummy = 'Dummy data';  
-  useEffect(() => {
-    const fetchData = async () => {
-      console.log("RestaurantMenu useEffect called");
-      const data = await fetch(
-        "https://www.zomato.com/webroutes/getPage?page_url=/bangalore/mainland-china-1-church-street-bangalore",
-      );
-      console.log(data);
-      const json = await data.json();
-      console.log(json);
-    };
-    fetchData();
-  }, [resId]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     console.log("RestaurantMenu useEffect called");
+  //     const data = await fetch(
+  //       "https://www.zomato.com/webroutes/getPage?page_url=/bangalore/mainland-china-1-church-street-bangalore",
+  //     );
+  //     console.log(data);
+  //     const json = await data.json();
+  //     console.log(json);
+  //   };
+  //   fetchData();
+  // }, [resId]);
   const accordianData =Cards.filter((card)=>{
         return card['card'].card['@type'] === 'type.googleapis.com/swiggy.presentation.food.v2.ItemCategory'
         })

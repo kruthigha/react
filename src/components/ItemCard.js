@@ -13,7 +13,7 @@ const ItemCard = ({ item, dummy, className = "" }) => {
   }
 
   return (
-    <div
+    <div data-testid= "itemCard"
       className={`mx-auto border-b border-gray-200 p-4 flex justify-between items-center gap-4 ${className}`}
     >
       {/* LEFT SIDE */}
@@ -40,6 +40,7 @@ const ItemCard = ({ item, dummy, className = "" }) => {
                px-6 py-1.5 rounded-lg
                shadow-md border border-gray-200"
           onClick={handleAddItemToCart}
+          data-testid = "addBtn"
         >
           Add+
         </button>

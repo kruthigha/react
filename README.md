@@ -17,7 +17,7 @@
  * @returns {JSX.Element} The rendered application layout.
  */
 
- Two types of import
+ # Two types of import
  Default export import
   export default component
   import component from './src/component'
@@ -29,7 +29,7 @@
   import {component} from './src/component'
 
 
-  Two types of web routing
+  # Two types of web routing
   client side routing - doesnt make a ntk call while navigating to our page, everytg is already loaded into our app
   server side routing - makes a ntk call while navigating to our page,and that about.html is coming from server thats Server side routing
 
@@ -41,7 +41,23 @@
  Dispatch (action)
  Selector
 
- # Types of Developer testing
+ # Types of Developer testing 
+ Unit testing (Testing in isolation)
+ Integration testing 
+ End to end testing e2e
+
+ Setting up testing in our app
+ install react testing library
+ install jest
+ install babel dependencies
+ configure babel
+ configure parcel config file to disable default babel transpilation
+ Jest config - npx jest --init
+ install @babel/preset-react to make jsx work in test cases
+ include   @babel/preset-react in config ['@babel/preset-react', {runtime : 'automatic'}]
+ install @testing-library/jest-dom
+ 
+
 
 
 

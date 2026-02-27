@@ -48,9 +48,9 @@ const Header = () => {
               {loginBtn ? "Login" : "Logout"}
             </button>
           </li>
-          <li id="nav-item" className="p-4 m-2 text-amber-50 text-lg">
+          { user.name && <li id="nav-item" className="p-4 m-2 text-amber-50 text-lg" data-testid='searchInput12'>
             {user.name}
-          </li>
+          </li>}
 
         </ul>
       </div>

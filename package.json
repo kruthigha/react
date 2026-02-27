@@ -17,11 +17,19 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest",
+    "watch-test" : "jest --watch",
     "start:server": "node server.js",
     "scrape": "node tools/scrape-swiggy.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-react": "^7.28.5",
     "@tailwindcss/postcss": "^4.1.18",
+    "@testing-library/react": "^16.3.2",
+    "babel-jest": "^30.2.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "parcel": "^2.16.4",
     "tailwindcss": "^4.1.18"
   },
@@ -32,6 +40,7 @@
   ],
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
+    "@testing-library/jest-dom": "^6.9.1",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "node-fetch": "^3.3.2",

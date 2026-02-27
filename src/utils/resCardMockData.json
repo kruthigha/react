@@ -1,0 +1,62 @@
+{
+    "resData": {
+        "info": {
+            "id": "999675",
+            "name": "Rowdy Reddy Biryani",
+            "city": "1",
+            "slugs": {
+                "restaurant": "namma-biryani-huskur-gate-electronic-city"
+            },
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/28/a979bd0d-510c-4507-9d2d-dfe17081d45a_999675.jpg",
+            "locality": "Huskur Gate",
+            "areaName": "Electronic City Phase 1",
+            "costForTwo": "₹250 for two",
+            "cuisines": [
+                "Biryani",
+                "Mughlai",
+                "Lucknowi",
+                "Hyderabadi",
+                "Kebabs",
+                "Desserts",
+                "Beverages"
+            ],
+            "avgRating": 4.1,
+            "feeDetails": {
+                "restaurantId": "999675",
+                "title": "Delivery Charge",
+                "amount": "0"
+            },
+            "totalRatingsString": "110",
+            "promoted": true,
+            "adTrackingId": "cid=0d926c64-2073-4f1d-8dff-01ca60eedf3c~p=1~adgrpid=0d926c64-2073-4f1d-8dff-01ca60eedf3c#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=999675~plpr=COLLECTION~st=meghana foods~eid=07488103-b5df-4105-9614-70c0fb623ef7~srvts=1772113963343~collid=56861",
+            "sla": {
+                "deliveryTime": 24,
+                "minDeliveryTime": 20,
+                "maxDeliveryTime": 25,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 MINS",
+                "lastMileTravelString": "1.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2026-02-26 23:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "aggregatedDiscountInfoV3": {
+                "header": "₹200 OFF",
+                "subHeader": "ABOVE ₹799",
+                "discountTag": "FLAT DEAL"
+            },
+            "externalRatings": {
+                "aggregatedRating": {
+                    "rating": "--"
+                }
+            },
+            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+            "campaignId": "0d926c64-2073-4f1d-8dff-01ca60eedf3c"
+        },
+        "analytics": {},
+        "cta": {}
+    }
+}
